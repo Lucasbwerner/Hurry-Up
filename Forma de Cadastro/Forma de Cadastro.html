@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="./MainForma.scss">
+
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <meta charset="utf-8">
+        <title>Forma de Cadastro</title>
+    </head>
+    <body>
+        <div class="Cadastro">
+            
+            <h1>O que deseja fazer?</h1>
+            <form>
+                <br>
+                <button><a href="Cadastro.html">Clique aqui caso não possua um cadastro</a></button>
+
+                <br>
+                <br>
+                <button><a href="Login.Html">Clique Aqui caso já possua uma conta</a></button>
+
+                <br>
+                <br>
+                <button><a href="Carro.html">Clique Aqui caso deseje Cadastrar seu carro</a></button>
+
+                <br>
+                <br>
+                <button><a href="Estacionamento.html">Clique Aqui caso deseje Cadastrar um Estacionamento</a></button>
+
+               
+                
+
+
+            </form>
+        </div>
+        <script>
+            const btsViewPassword = document.querySelectorAll(".view-password");
+
+            btsViewPassword.forEach(el => {
+                el.addEventListener('click', ev=> {
+                    ev.preventDefault();
+                    const container = el.closest('p');
+                    const input = container.querySelector('input');
+                    if (input.type === "password") {
+                        input.type = "text";
+                    }else{
+                        input.type = "password";
+                    }
+                });
+            });
+
+            const forms = document.querySelectorAll("form");
+
+            form.forEach(el => {
+                el.addEventListener("submit", ev => {
+                    ev.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>

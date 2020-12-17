@@ -1,0 +1,23 @@
+Compartilhar o código pelo GitHub.
+Noções básicas:
+1. Entrar no site do GitHub e criar uma conta
+https://github.com/
+Angelo Augusto Frozza16:05
+2. Criar um novo repositório, com o nome do projeto (p.ex HurryUp), com os parâmetros Descrição, Public, Add README, Add .gitignore, Choose a license (Creative...)
+Angelo Augusto Frozza16:07
+3. Instalar o GitHub desktop
+https://desktop.github.com/
+4. Rodar o GitHub Desktop
+Angelo Augusto Frozza16:09
+5. Menu File - Clone repository
+Angelo Augusto Frozza16:11
+6. Marque o repositorio que vai ser clonado e o local no HD em que esse repositorio vai ficar armazenado (preferencialmente, uma pasta vazia)
+Angelo Augusto Frozza16:13
+7. Codifique normalmente a aplicação, salvando na pasta que indicou no passo anterior
+Angelo Augusto Frozza16:15
+8. Para compartilhar o código, atualizando o repositorio no GitHub:
+Angelo Augusto Frozza16:17
+8a. Fazer o Commit dos arquivos alterados (informe um titulo)
+8b. Executar o push para transferir os arquivos alterados
+Angelo Augusto Frozza16:19
+9. Para atualizar o PC local com os arquivos no repositório, é executado o comando Pull 

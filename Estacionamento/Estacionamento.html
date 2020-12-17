@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="./MainEstacionamento.scss">
+
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CadastroEstacionamento</title>
+    </head>
+    <body>
+        <div class="Cadastro">
+            <img src="user.png" class="usuario" width="100" height="100" alt="">
+            <h1>Cadastro</h1>
+            <form>
+
+                <p>Nome do Estacionamento</p>
+                <input type="text" name="" placeholder="Insira o nome do Estacionamento">
+                <p>Email</p>
+                <input type="text" name="" placeholder="Insira seu Email">
+                <p>Endereço</p>
+                <input type="text" name="" placeholder="Insira o Endereço do Estacionamento">
+                <p>CNPJ</p>
+                <input type="INT" name="" placeholder="Insira seu CNPJ">
+                <p>Senha</p>
+                <input type="password" name="" placeholder="Insira sua senha">
+                <p>Repita sua senha</p>
+                <input type="password" name="" placeholder="Insira sua senha">
+                <input type="submit" name="" value="Cadastrar">
+                
+
+
+            </form>
+        </div>
+        <script>
+            const btsViewPassword = document.querySelectorAll(".view-password");
+
+            btsViewPassword.forEach(el => {
+                el.addEventListener('click', ev=> {
+                    ev.preventDefault();
+                    const container = el.closest('p');
+                    const input = container.querySelector('input');
+                    if (input.type === "password") {
+                        input.type = "text";
+                    }else{
+                        input.type = "password";
+                    }
+                });
+            });
+
+            const forms = document.querySelectorAll("form");
+
+            form.forEach(el => {
+                el.addEventListener("submit", ev => {
+                    ev.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>
